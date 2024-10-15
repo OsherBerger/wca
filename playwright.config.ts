@@ -32,8 +32,8 @@ export default defineConfig({
     video: 'on',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
-    // headless: process.env.CI ? true : false,
-    headless: false,
+    headless: process.env.CI ? true : false,
+    // headless: false,
   },
 
   /* Configure projects for major browsers */
